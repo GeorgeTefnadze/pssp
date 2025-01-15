@@ -4,33 +4,33 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 h-[104px] w-screen flex justify-between items-center border-b border-borderColor py-7 px-12">
-      <div className="logoWrapper w-[160px]">
+    <header className="z-10 fixed top-0 left-0 h-[104px] w-screen flex justify-between items-center border-b border-borderColor">
+      <div className="logoWrapper w-[240px] p-12">
         <Link to={"/"}>
           <img src={logo} alt="Logo" />
         </Link>
       </div>
-      <nav className="menu text-primaryText">
+      <nav className="menu flex-1 h-full flex justify-end items-center pr-12 text-primaryText backdrop-filter backdrop-blur bg-primaryBg bg-opacity-90">
         <ul className="menuList flex gap-8">
           <li className="menuListItem">
-            <a className="menuListLink" href="/#main">
+            <Link className="menuListLink" to={"/#main"}>
               მთავარი
-            </a>
+            </Link>
           </li>
           <li className="menuListItem">
-            <a className="menuListLink" href="/#info">
+            <Link className="menuListLink" to={"/#info"}>
               ჩვენს შესახებ
-            </a>
+            </Link>
           </li>
           <li className="menuListItem">
-            <a className="menuListLink" href="/projects">
+            <Link className="menuListLink" to={"/projects"}>
               ნამუშევრები
-            </a>
+            </Link>
           </li>
           <li className="menuListItem">
-            <a className="menuListLink" href="/#contact">
+            <Link className="menuListLink" to={"/#contact"}>
               კონტაქტი
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

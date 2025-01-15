@@ -10,7 +10,7 @@ export default function RouteManager() {
     <>
       <Header />
       <LeftMenu />
-      <section className="bg-primaryBg w-full h-screen pt-[104px] pl-[240px]">
+      <section className="bg-primaryBg w-full min-h-screen pt-[104px] pl-[240px]">
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/projects" element={<Projects />} />
