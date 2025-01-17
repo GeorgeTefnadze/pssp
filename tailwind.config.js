@@ -8,7 +8,11 @@ export default {
         primaryText: "#fff",
         secondaryText: "#8a8a8a",
         borderColor: "#333333",
+        primary: "#333333",
         hoverBg: "#fff",
+      },
+      borderColor: {
+        primary: "#333333",
       },
     },
   },

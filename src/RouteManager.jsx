@@ -13,7 +13,7 @@ export default function RouteManager() {
       <DataProvider>
         <Header />
         <LeftMenu />
-        <section className="bg-primaryBg w-full min-h-screen pt-[104px] md:pl-[240px]">
+        <section className="routerWrapper bg-primaryBg w-full min-h-screen pt-[104px] md:pl-[240px]">
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/projects" element={<Projects />} />

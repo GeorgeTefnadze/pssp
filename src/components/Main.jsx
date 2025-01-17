@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function Main() {
   return (
-    <main className="">
-      <section className="flex flex-col gap-8 items-center justify-center h-screen text-center">
+    <main className="border-b border-primary">
+      <section className="flex flex-col gap-8 items-center justify-center h-[calc(100vh-104px)] text-center">
         <h1 className="text-primaryText text-5xl px-12">
           პროფესიული სტუდენტების წარმატების პლატფორმა
         </h1>

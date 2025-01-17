@@ -12,3 +12,7 @@
 body {
     font-family: ninomtavruli, sans-serif;
 }
+
+.routerWrapper {
+    background-image: url(assets/background.svg)
+}
