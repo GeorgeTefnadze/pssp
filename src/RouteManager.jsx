@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import LeftMenu from "./components/LeftMenu";
 import Projects from "./Projects";
 import IframeView from "./IframeView";
+import Form from "./components/Form";
 import { DataProvider } from "./DataContext";
 
 export default function RouteManager() {
@@ -19,6 +20,7 @@ export default function RouteManager() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<Projects />} />
             <Route path="/iframe/:src" element={<IframeView />} />
+            <Route path="/form" element={<Form />} />
           </Routes>
         </section>
       </DataProvider>

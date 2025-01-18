@@ -8,7 +8,7 @@ export default function IframeView() {
   return (
     <div className="iframe-view w-full h-[calc(100vh-104px)] relative">
       <iframe
-        src={"http://localhost/projects/assets/" + src}
+        src={"http://localhost/uploads/projects/" + src}
         allowFullScreen
         className="w-full h-full"
       ></iframe>
